@@ -5,7 +5,11 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import { HomeScreenStyles } from '../styles/HomeScreenStyles';
 
-const HomeScreen = (): React.ReactElement => {
+type TProps = {
+    navigation: any
+}
+
+const HomeScreen = ({ navigation }: TProps): React.ReactElement => {
     const snapPoints = useMemo(() => ['25%', '50%', '90%'], []);
 
     return (
@@ -15,14 +19,18 @@ const HomeScreen = (): React.ReactElement => {
                     <View style={HomeScreenStyles.boxJustify}>
                         <View style={HomeScreenStyles.column}>
                             <Text style={HomeScreenStyles.textBlack}>улица аделя кутуя, 82</Text>
-                            <Text style={HomeScreenStyles.textGray}>Доставка 15 минут</Text>
+                            <Text style={HomeScreenStyles.textGray}
+                                onPress={() => {
+                                    navigation.navigate("Details");
+                                }}
+                            >Доставка 15 минут</Text>
                         </View>
-                        <Text style={{ fontSize: 35 }}>🧑🏼‍🦱</Text>
+                        <Text style={{ fontSize: 35 }}
+                            onPress={() => {
+                                navigation.navigate("Profile");
+                            }}
+                        >🧑🏼‍🦱</Text>
                     </View>
-                    {/* <Image
-            source={require('./src/assets/sm1.png')}
-            style={HomeScreenStyles.imageBox}
-          /> */}
                 </View>
             </SafeAreaView>
             <BottomSheet snapPoints={snapPoints}>
@@ -44,3 +52,14 @@ const HomeScreen = (): React.ReactElement => {
 }
 
 export default HomeScreen;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    image: {
+        flex: 1,
+        width: "auto",
+        height: "auto",
+    },
+});
