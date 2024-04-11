@@ -13,8 +13,13 @@ const StackHolder = () => {
         component={HomeScreen}
         options={{ headerShown: false }}
       />
-      <Stack.Screen name="Details" component={ProductScreen} />
-      <Stack.Screen name="Profile" component={ProfileScreen} />
+      <Stack.Screen
+        name="Details"
+        component={ProductScreen}
+        options={{ headerShown: false }}
+      />
+      <Stack.Screen name="Profile" component={ProfileScreen}
+      />
 
     </Stack.Navigator>
   );

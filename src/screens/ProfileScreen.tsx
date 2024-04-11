@@ -1,10 +1,19 @@
 import React from 'react'
-import { Text } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 
 const ProfileScreen = () => {
     return (
-        <Text>ProfileScreen</Text>
+        <View style={styles.containerFull}>
+            <Text>ProfileScreen</Text>
+        </View>
     )
 }
 
 export default ProfileScreen
+
+const styles = StyleSheet.create({
+    containerFull: {
+        flex: 1,
+        padding: 10
+    },
+})

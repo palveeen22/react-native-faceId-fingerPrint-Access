@@ -1,5 +1,5 @@
 {
-  "name": "learnFaceId",
+  "name": "pesanaja",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -22,12 +22,14 @@
     "@types/react-native-vector-icons": "^6.4.18",
     "react": "18.2.0",
     "react-native": "0.73.6",
+    "react-native-animated-pagination-dots": "^0.1.73",
     "react-native-biometrics": "^3.0.1",
     "react-native-elements": "^3.4.3",
     "react-native-gesture-handler": "^2.16.0",
     "react-native-reanimated": "^3.8.1",
     "react-native-safe-area-context": "^4.9.0",
     "react-native-screens": "^3.30.1",
+    "react-native-svg": "^15.1.0",
     "react-native-touch-id": "^4.4.1",
     "react-native-vector-icons": "^10.0.3"
   },
@@ -42,6 +44,7 @@
     "@types/react": "^18.2.6",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.6.3",
+    "babel-plugin-module-resolver": "^5.0.0",
     "eslint": "^8.19.0",
     "jest": "^29.6.3",
     "prettier": "2.8.8",
