@@ -59,7 +59,7 @@ const INTRO_DATA = [
     },
 ];
 
-const App = () => {
+const CarouselScreen = () => {
     const { width } = useWindowDimensions();
     const scrollX = React.useRef(new Animated.Value(0)).current;
     const renderItem = React.useCallback(
@@ -147,4 +147,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default App;
+export default CarouselScreen;

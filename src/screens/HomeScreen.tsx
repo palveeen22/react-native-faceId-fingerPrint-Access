@@ -21,7 +21,7 @@ const HomeScreen = ({ navigation }: TProps): React.ReactElement => {
                             <Text style={HomeScreenStyles.textBlack}>улица аделя кутуя, 82</Text>
                             <Text style={HomeScreenStyles.textGray}
                                 onPress={() => {
-                                    navigation.navigate("Details");
+                                    navigation.navigate("Carousel");
                                 }}
                             >Доставка 15 минут</Text>
                         </View>
