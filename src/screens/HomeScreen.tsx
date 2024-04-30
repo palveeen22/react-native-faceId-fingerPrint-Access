@@ -18,7 +18,11 @@ const HomeScreen = ({ navigation }: TProps): React.ReactElement => {
                 <View style={HomeScreenStyles.padding}>
                     <View style={HomeScreenStyles.boxJustify}>
                         <View style={HomeScreenStyles.column}>
-                            <Text style={HomeScreenStyles.textBlack}>улица аделя кутуя, 82</Text>
+                            <Text style={HomeScreenStyles.textBlack}
+                                onPress={() => {
+                                    navigation.navigate("Chat Room")
+                                }}
+                            >улица аделя кутуя, 82</Text>
                             <Text style={HomeScreenStyles.textGray}
                                 onPress={() => {
                                     navigation.navigate("Carousel");
